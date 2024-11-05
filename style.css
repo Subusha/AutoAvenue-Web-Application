@@ -1,0 +1,555 @@
+/* styles.css */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: #333333;
+  padding: 20px;
+}
+nav img {
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section#hero {
+  background-image: url("./images/pic.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  min-height: calc(100vh - 372px - 58px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 10px #000;
+}
+
+section#hero p {
+  font-size: 16px;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 10px #000;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section#featured-vehicles {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+section#featured-vehicles h2 {
+  margin-bottom: 20px;
+}
+
+.vehicle-listings {
+  display: flex;
+  justify-content: center;
+}
+
+.vehicle {
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px #000;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.vehicle:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+.vehicle img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.vehicle a {
+  text-decoration: none;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  background-color: #ff0000;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#login {
+  background-image: url("./images/bg-2.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#login1 .container {
+  width: 600px;
+  margin: 100px auto;
+  background-color: #ffffff3d;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000000ad;
+  backdrop-filter: blur(10px);
+  transition: all 0.25s;
+}
+#login .container:hover {
+  background-color: #ffffff7c;
+}
+
+#login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login1 {
+  background-image: url("./images/bg-2.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+#login1 .logo {
+  margin-bottom: 5px;
+}
+#login1 .x {
+  margin-top: 10px;
+}
+#login1 p {
+  margin-bottom: 5px;
+}
+
+#login1 .form-group {
+  margin-bottom: 20px;
+}
+
+#login1 label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#login1 input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 580px;
+}
+#login1 .error {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.cmn-btn,
+#login1 button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#login .container {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #1616163d;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000000ad;
+  backdrop-filter: blur(50px);
+  transition: all 0.25s;
+}
+#login .container:hover {
+  background-color: #ffffff7c;
+}
+
+#login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+}
+#login .logo {
+  margin-bottom: 5px;
+}
+#login .x {
+  margin-top: 10px;
+}
+#login p {
+  margin-bottom: 5px;
+}
+
+#login .form-group {
+  margin-bottom: 20px;
+}
+
+#login label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#login input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 380px;
+}
+#login .error {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.cmn-btn,
+#login button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
+#details section#vehicle-details {
+  padding: 50px;
+  text-align: center;
+  color: #ccc;
+}
+#details section {
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+#details section#vehicle-details h2 {
+  margin-bottom: 20px;
+}
+
+#details .vehicle-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#details .vehicle-images img {
+  width: 400px;
+  height: auto;
+  margin: 0 10px;
+  box-shadow: 0 0 20px #000;
+  border-radius: 5px;
+}
+
+#x .vehicle-images {
+  max-width: 800px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#x .vehicle-images img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 20px #000;
+  border-radius: 5px;
+}
+
+#details .vehicle-info {
+  text-align: left;
+}
+#details .vehicle-info li span {
+  font-weight: 600;
+}
+
+#details .vehicle-info h3 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+#details .vehicle-info ul {
+  list-style-type: none;
+}
+
+#details .vehicle-info ul li {
+  margin-bottom: 5px;
+}
+/*  */
+#search .vehicle-listings {
+  padding: 14px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0;
+}
+
+#search .vehicle {
+  text-align: center;
+  box-shadow: 0 0 5px #000;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+#search .vehicle:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+#search .vehicle img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+#search .vehicle a {
+  text-decoration: none;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  background-color: #ff0000;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+#search section h1,
+#search section #search-form {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#search section #search-form input {
+  font-size: 17px;
+  padding: 5px 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0 0 3px #00000085;
+}
+#search section hr {
+  width: calc(100% - 40px);
+}
+
+#add h1 {
+  padding-left: 25px;
+  padding-top: 25px;
+}
+#add .form-wrap {
+  background-color: #ffffff47;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px #000;
+}
+#add #add-car-form {
+  max-width: 800px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+#add #add-car-form .wrap {
+  padding: 5px;
+}
+#add #add-car-form .wrap label {
+  font-size: 16px;
+  font-weight: 600;
+}
+#add #add-car-form .wrap .errorx {
+  font-size: 16px;
+  font-weight: 400;
+  color: #e60000;
+}
+#add #add-car-form .wrap input,
+#add #add-car-form .wrap select {
+  outline: none;
+  font-size: 17px;
+  padding: 5px 10px;
+  width: calc(100% - 25px);
+  margin-bottom: 10px;
+}
+#add #add-car-form .wrap select {
+  width: 100%;
+}
+
+#add {
+  background: url("./images/hero-image.jpg");
+  background-size: cover;
+}
+#add section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 58px);
+}
+
+footer {
+  background-color: #333333;
+  padding: 20px 0;
+  color: #ededed;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex-basis: 33%;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li {
+  list-style-type: none;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-section ul li a:hover {
+  color: #ff0000;
+}
+
+footer .copy {
+  text-align: center;
+  width: 100%;
+}
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.table-wrap {
+  padding: 20px;
+  min-height: calc(100vh - 365px - 58px);
+}
+#search-results {
+  min-height: calc(100vh - 365px - 58px);
+}
+.add-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
